@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>MyApp : Flask</title>
+</head>
+<body>
+<h1>Welcome to myapp , about page</h1>
+
+<h2>Click on the link below to redirect</h2>
+<a href="/">Home Page</a><br/>
+<a href="/about">About Page</a><br/>
+<a href="/contact">Contact Page</a><br/>
+<a href="/service">Service Page</a><br/>
+<a href="/register">Register Page</a><br/>
+<a href="/login">Login Page</a><br/>
+
+{% if a>b %}
+<h1>a is greater</h1>
+{% else %}
+<h1>b is greater</h1>
+{% endif %}
+
+<h2>Marks list : loop access</h2>
+{% for x in mks %}
+<p>{{x}}</p>
+{% endfor %}
+
+<h2>Marks list : manual access</h2>
+<p>marks 1 : {{mks[0]}}</p>
+<p>marks 2 : {{mks[1]}}</p>
+<p>marks 3 : {{mks[2]}}</p>
+<p>marks 4 : {{mks[3]}}</p>
+<p>marks 5 : {{mks[4]}}</p>
+
+<h2>Add result</h2>
+<p>a = {{a}}</p>
+<p>b = {{b}}</p>
+<p>add = {{c}}</p>
+
+</body>
+</html>
